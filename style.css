@@ -1,0 +1,210 @@
+body {
+	background: url(background.gif) repeat-x left top #cccccc;
+	font-family:Garamond, Palatina, serif;
+	margin: 0;
+	padding: 0;
+	min-width: 800px;
+	min-height: 600px;
+}
+
+h1, h2, h3 { color: #660000; font-family:Garamond }
+h1 {
+    margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px; 
+}
+
+textarea#profdispatch
+{
+    width:95%;
+    float: center;
+}
+
+p {
+	padding-top:1px;
+	margin-top:1px;
+}
+
+img {
+	border:0px;
+}
+img#profpic
+{
+	float: top;
+	vertical-align: top;
+/*	float: left; */
+}
+
+form#uniSearchBox{
+    display: inline-block;
+    margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px; 
+}
+a#sitelogo{
+    float: center;
+}
+
+table#profileTable{
+	width: 100%;
+	vertical-align: top;
+	border: 1;
+}
+
+td#wallTabButton {
+width:33%;
+}
+
+div#friendsTab {
+display: hidden;
+}
+
+table#tabSelector {
+width:100%;
+/* background-color: red; */
+text-align: center;
+float: top;
+border: 1;
+}
+
+td#leftsideProf {
+width:20%;
+}
+
+td#tabArea {
+vertical-align: top;
+background-color: white;
+min-width: 600px;
+}
+
+tr#profSecondRow {
+vertical-align: top;
+}
+
+.navigationtop A:link { color:#FFFFFF; }
+.navigationtop A:visited { color:#FFFFFF; }
+
+.unifooter A:link { color:#660000; }
+.unifooter A:visited { color:#660000; }
+
+.requesttable A:link { color:#660000; }
+.requesttable A:visited { color:#660000; }
+
+#navtable {
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px; 
+color:#FFFFFF; 
+}
+
+#requeststable {
+color: #660000;
+}
+
+#footer {
+text-color: #660000;
+text-align: center;
+}
+
+#contentTable{
+	width:100%;
+	padding:4px;
+}
+
+table#alertarea{
+	float: right;
+	padding:20px;
+}
+
+#uniCenterSearchBox{
+float: right;
+display: inline;
+}
+#uniLogoutButtonDiv {
+float: right;
+display: inline;
+padding-top: 0px;
+margin-top: 0px;
+}
+div#friendStatusArea{
+	float: left;
+	display: inline;
+	padding-top: 0px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+#leftNavigationLinks{
+float: left;
+}
+
+#loginBox{
+float: right;
+}
+#profInfoArea{
+float: left;
+}
+
+#homepageRegForm{
+float: center;
+}
+ 
+.pressedButton TD
+{
+  background-color: '#cccccc';
+}
+
+.unPressedTab:hover{
+background-color: #660000;
+color: #111111;
+}
+
+.unPressedTab {
+background-color: #cccccc;
+}
+
+.pressedTab:hover{
+background-color: 660000;
+}
+
+.pressedTab{
+background-color: #660000;
+}
+
+table#feedtable {
+width:100%;
+float: top;
+border: 1;
+}
+
+table#friendsTable {
+width: 50%;
+float: right;
+margin-left:auto; 
+margin-right:auto;
+}
+
+table#friendsPageTable {
+width: 50%;
+float: left;
+}
+
+table#userInfoArea {
+width: 50%;
+float: right;
+margin-left:auto; 
+margin-right:auto;
+}
+
+div#msgdiv {
+background-color:yellow;
+border:1px solid black;
+display: none;
+width:200px;
+height:200px;
+margin-left:auto; 
+margin-right:auto;
+}

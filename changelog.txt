@@ -1,0 +1,42 @@
+What's new in version Brotherhood 0.4.5 (May-11-2012):
+*Finished rewrite of site to use JavaScript and CSS.
+*Updates to front and backend of Dispatches
+*Bug fixes
+*Cleaned and Streamlined Code
+
+
+What's new in version Brotherhood 0.4 (Apr-23-2012):
+*Dispatches. Now you can post dispatches for you and your friends to see. Your feed of dispatches is now on the homepage. 
+*Redesigned Profiles. Due to the addition of more features, User Profiles have been redesigned with a tab interface.
+*JavaScript is now required for using the website
+*Lots of the backend is now built on XML and is dynamically loaded in the background
+
+
+What's new in version Brotherhood 0.3 (Apr-9-2012):
+*New Design. The site has been rebranded and rewritten to look better and be more user-friendly. This redesign has moved most formatting over to CSS.
+	*New custom logo
+*Profile Picture: You can now upload a picture to use as your profile picture. This image is automatically resized to the proper size. 
+	*This is built in such a way to enable posting of non-profile pictures later
+*Search. You can now search for users by either first or last name OR first and last name and then add them directly from the search results.
+*When on the pages of other users, you can add their friends as friends directly without having to navigate to another page.
+*There is rudimentary support of XML. It is possible to generate an XML file of your friends list. 
+
+What's new in version theBrotherhood 0.2: (Apr-2-2012)
+
+*The Brotherhood now has a favicon
+*The top navigation bar is flush with the top of the 
+*Friending! You can be friends with a user
+	*You can request and deny to be in a friending relation with another user.
+	*The navigation bar alerts of new friend requests
+	*Friends are displayed on the homepage
+*There is now a way to fill in more profile information. If the user info table is not complete, the alert area will nag a user to fill in the information.
+*There is a new alert area (missinginfo.php) that has pending friend requests and ways to fill in missing profile information. 
+
+What's new in version theBrotherhood 0.1: (Mar-21-2012)
+*First Release
+*Users can register
+*Users can login
+*The welcome page displays basic user information.
+*A user can view his own profile, this is built in such a way to easily enable looking at others soon
+*The system checks weather a user is logged in an will not allow non-logged-in users to view profiles, the welcome page, and anything that requires an account.
+*System is COPPA complaint. 
