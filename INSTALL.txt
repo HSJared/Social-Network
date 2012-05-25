@@ -1,0 +1,70 @@
+How to install:
+
+1. Create a MySQL database with the following tables:
+
+CREATE TABLE `login` (
+  `userid` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `email` char(255) NOT NULL DEFAULT '',
+  `password` char(255) NOT NULL DEFAULT '',
+  `online` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`userid`)
+) ENGINE=MyISAM AUTO_INCREMENT=110 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `messages` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `userid` int(11) DEFAULT NULL,
+  `recipientid` int(11) DEFAULT NULL,
+  `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `content` varchar(500) DEFAULT NULL,
+  `private` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `pictures` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `ext` char(3) DEFAULT NULL,
+  `userid` int(11) DEFAULT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `width` int(11) unsigned NOT NULL,
+  `height` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `relations` (
+  `userid1` int(11) NOT NULL DEFAULT '0',
+  `userid2` int(11) NOT NULL DEFAULT '0',
+  `relation` smallint(1) DEFAULT '0',
+  PRIMARY KEY (`userid1`,`userid2`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `schools` (
+  `schoolid` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` char(255) DEFAULT NULL,
+  PRIMARY KEY (`schoolid`)
+) ENGINE=MyISAM AUTO_INCREMENT=397 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `userinfo` (
+  `userid` int(11) unsigned NOT NULL,
+  `nickname` char(128) DEFAULT NULL,
+  `fname` char(128) NOT NULL DEFAULT '',
+  `mname` char(128) DEFAULT NULL,
+  `lname` char(128) NOT NULL DEFAULT '',
+  `gender` char(1) DEFAULT NULL,
+  `bdate` date DEFAULT NULL,
+  `phonenum` char(11) DEFAULT NULL,
+  `schoolid` int(11) DEFAULT NULL,
+  `employerid` int(11) DEFAULT NULL,
+  `addressline1` char(255) DEFAULT NULL,
+  `addressline2` char(255) DEFAULT NULL,
+  `city` char(60) DEFAULT NULL,
+  `state` char(60) DEFAULT NULL,
+  `postalcode` int(11) DEFAULT NULL,
+  `defaultpicid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`userid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+2. Edit config.php to include the info about the database.
+
+3. Create a pictures folder in the root where index.php is that apache/php can read and write to.
+
