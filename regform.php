@@ -56,7 +56,13 @@ echo "<p align=\"right\"><font size=\"10\" face=\"Garamond\" color=\"000000\">Jo
     </tr>
 	<tr>
       <td>  </td>
-      <td><input type=\"submit\" value=\"Register\" /></form></td>
+      <td>
+        <input type=\"submit\" value=\"Register\" />
+        <b><div id=\"error\" style=\"height: 24px;color: #F00;  \">
+        </div></b>
+
+        </form>
+      </td>
     </tr>
     <tr>
       <td>  </td>

@@ -31,29 +31,47 @@ var birthday = parseInt(document.forms["register"]["day"].value);
 
 if (fname==null || fname=="")
   {
-  alert("First name must be filled in");
+  var div = document.getElementById("error");
+    div.textContent = "First name must be filled in";
+    var text = div.textContent;
   return false;
   }
   if (lname==null || lname=="")
   {
-  alert("Last name must be filled in");
+  var div = document.getElementById("error");
+    div.textContent = "Last name must be filled in";
+    var text = div.textContent;
   return false;
   }
   if (email==null || email=="")
   {
-  alert("Email must be filled in");
+  var div = document.getElementById("error");
+    div.textContent = "E-mail must be filled in";
+    var text = div.textContent;
   return false;
   }
   var atpos=email.indexOf("@");
    var dotpos=email.lastIndexOf(".");
    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) //Checks if @ is first character, if email is @. or if the . is not in the string
   	{
-  		alert("Not a valid e-mail address");
+  		var div = document.getElementById("error");
+    div.textContent = "Not a valid e-mail address";
+    var text = div.textContent;
   		return false;
   	}
   if (pwd1 != pwd2)
   {
-  alert("Passwords don't match");
+ var div = document.getElementById("error");
+    div.textContent = "Passwords don't match";
+    var text = div.textContent;
+  return false;
+  }
+
+   if (pwd1 == "" || pwd1 == null)
+  {
+ var div = document.getElementById("error");
+    div.textContent = "Passwords must be filled in";
+    var text = div.textContent;
   return false;
   }
 
